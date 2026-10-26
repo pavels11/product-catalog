@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All products - Garl D.</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo-wrapper">
+        <img class="header-logo-image" src="./images/header/logo.png" alt="" />
+        <a class="header-logo-link" href="/" aria-label="Garl D. Home Page"
+          >Garl D.</a
+        >
+      </div>
+      <nav aria-label="Main navigation">
+        <ul class="header-navigation-list">
+          <li class="header-navigation-list-item">
+            <a href="/product">Product</a>
+          </li>
+          <li class="header-navigation-list-item"><a href="/sale">Sale</a></li>
+          <li class="header-navigation-list-item">
+            <a href="/special">Special</a>
+          </li>
+          <li class="header-navigation-list-item">
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header-actions-list">
+        <li class="header-actions-list-item">
+          <a href="/search" aria-label="Search">
+            <img
+              class="header-actions-list-item-icon"
+              src="./images/header/search.png"
+              alt=""
+            />
+          </a>
+        </li>
+        <li class="header-actions-list-item">
+          <a href="/favorites" aria-label="Favorites">
+            <img
+              class="header-actions-list-item-icon"
+              src="./images/header/favorite.png"
+              alt=""
+            />
+          </a>
+        </li>
+        <li class="header-actions-list-item">
+          <a
+            href="/cart"
+            class="header-cart-link"
+            data-count="3"
+            aria-label="Cart"
+          >
+            <img
+              class="header-actions-list-item-icon"
+              src="./images/header/cart.png"
+              alt=""
+            />
+          </a>
+        </li>
+        <li class="header-actions-list-item">
+          <a href="/profile" aria-label="Profile">
+            <img
+              class="header-actions-list-item-icon"
+              src="./images/header/profile.png"
+              alt=""
+            />
+          </a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <div class="breadcrumbs-header-main-subtitle-wrapper">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <ol class="breadcrumbs-list">
+            <li><a href="/">Home</a></li>
+            <li><span aria-current="page">All products</span></li>
+          </ol>
+        </nav>
+        <h1>All products</h1>
+        <p class="main-subtitle">
+          Premium audio gear and accessories for every lifestyle
+        </p>
+        <button type="button" class="button-filters">Filters</button>
+      </div>
+      <div class="filters-catalog-wrapper">
+        <aside class="catalog-filters">
+          <h2 class="catalog-filters-header">Filters</h2>
+          <form action="#" method="get">
+            <fieldset class="filter-group">
+              <legend class="visually-hidden">Price range</legend>
+              <div class="filter-title-wrapper">
+                <span class="filter-title" aria-hidden="true">Price range</span>
+                <button type="button" class="clear-button">Clear</button>
+              </div>
+              <div class="range-slider-wrapper">
+                <input
+                  type="range"
+                  min="0"
+                  max="1000"
+                  value="500"
+                  aria-label="Price limit"
+                />
+              </div>
+              <div class="prices-wrapper">
+                <span class="price-box">0</span>
+                <span class="delimiter"></span>
+                <span class="price-box">500</span>
+              </div>
+            </fieldset>
+            <fieldset class="filter-group">
+              <legend>Category</legend>
+              <ul class="filter-category-list">
+                <li>
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="category"
+                      value="headphones"
+                      checked
+                    />
+                    <span class="checkmark"></span>
+                    Headphones
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="category" value="earbuds" />
+                    <span class="checkmark"></span>
+                    Earbuds
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="category"
+                      value="speakers"
+                      checked
+                    />
+                    <span class="checkmark"></span>
+                    Speakers
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="category" value="wearables" />
+                    <span class="checkmark"></span>
+                    Wearables
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="category"
+                      value="accessories"
+                    />
+                    <span class="checkmark"></span>
+                    Accessories
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-group">
+              <legend>Color</legend>
+              <ul class="filter-color-list">
+                <li>
+                  <label>
+                    <input type="checkbox" name="color" value="black" checked />
+                    <span class="checkmark"></span>
+                    <span class="color-circle black"></span>
+                    Black
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="color" value="white" />
+                    <span class="checkmark"></span>
+                    <span class="color-circle white"></span>
+                    White
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="color" value="gray" />
+                    <span class="checkmark"></span>
+                    <span class="color-circle gray"></span>
+                    Gray
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="color" value="silver" />
+                    <span class="checkmark"></span>
+                    <span class="color-circle silver"></span>
+                    Silver
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="color" value="blue" />
+                    <span class="checkmark"></span>
+                    <span class="color-circle blue"></span>
+                    Blue
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="color" value="navy" />
+                    <span class="checkmark"></span>
+                    <span class="color-circle navy"></span>
+                    Navy
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="color" value="red" checked />
+                    <span class="checkmark"></span>
+                    <span class="color-circle red"></span>
+                    Red
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="color" value="rose" checked />
+                    <span class="checkmark"></span>
+                    <span class="color-circle pink"></span>
+                    Rose
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-group">
+              <legend>Availability</legend>
+              <label>
+                <input type="checkbox" name="stock" value="in-stock" checked />
+                <span class="checkmark"></span>
+                In stock only
+              </label>
+            </fieldset>
+          </form>
+        </aside>
+        <section class="catalog-content">
+          <h2 class="catalog-content-header visually-hidden">Catalog</h2>
+          <div class="catalog-products-grid">
+            <article class="catalog-product-card">
+              <div class="product-card-visual-wrapper">
+                <img
+                  class="product-card-image"
+                  src="./images/products/product1.webp"
+                  alt=""
+                />
+                <div class="product-card-badges-wrapper">
+                  <span class="badge badge-best">Best Seller</span>
+                  <span class="badge badge-save">Save 14%</span>
+                </div>
+                <div class="product-card-pagination-wrapper">
+                  <button
+                    type="button"
+                    class="pagination-dot active"
+                    aria-label="Go to slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    class="pagination-dot"
+                    aria-label="Go to slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    class="pagination-dot"
+                    aria-label="Go to slide 3"
+                  ></button>
+                </div>
+              </div>
+              <div class="product-card-information-wrapper">
+                <p class="product-card-category">Headphones</p>
+                <h3 class="product-card-header">
+                  Boost Harmony Retro Wireless Heads...
+                </h3>
+                <div
+                  class="product-card-reviews-wrapper"
+                  role="img"
+                  aria-label="Rating: 4.2 out of 5 based on 1256 reviews"
+                >
+                  <span class="rating-star"></span>
+                  <span class="rating-value">4.2</span>
+                  <span class="rating-count">(1.256)</span>
+                </div>
+                <div class="product-card-price-wrapper">
+                  <span class="price price-current">$149.50</span>
+                  <del class="price price-old">$289.00</del>
+                </div>
+              </div>
+            </article>
+            <article class="catalog-product-card">
+              <div class="product-card-visual-wrapper">
+                <img
+                  class="product-card-image"
+                  src="./images/products/product2.webp"
+                  alt=""
+                />
+                <div class="product-card-badges-wrapper">
+                  <span class="badge badge-best">Best Seller</span>
+                </div>
+                <div class="product-card-pagination-wrapper">
+                  <button
+                    type="button"
+                    class="pagination-dot active"
+                    aria-label="Go to slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    class="pagination-dot"
+                    aria-label="Go to slide 2"
+                  ></button>
+                </div>
+              </div>
+              <div class="product-card-information-wrapper">
+                <p class="product-card-category">Headphones</p>
+                <h3 class="product-card-header">
+                  Boost Reverb Wireless ANC Headset...
+                </h3>
+                <div
+                  class="product-card-reviews-wrapper"
+                  role="img"
+                  aria-label="Rating: 3.9 out of 5 based on 3098 reviews"
+                >
+                  <span class="rating-star"></span>
+                  <span class="rating-value">3.9</span>
+                  <span class="rating-count">(3.098)</span>
+                </div>
+                <div class="product-card-price-wrapper">
+                  <span class="price price-current">$199.00</span>
+                  <del class="price price-old">$399.00</del>
+                </div>
+              </div>
+            </article>
+            <article class="catalog-product-card">
+              <div class="product-card-visual-wrapper">
+                <img
+                  class="product-card-image"
+                  src="./images/products/product3.webp"
+                  alt=""
+                />
+                <div class="product-card-badges-wrapper">
+                  <span class="badge badge-new">New</span>
+                </div>
+                <div class="product-card-pagination-wrapper">
+                  <button
+                    type="button"
+                    class="pagination-dot active"
+                    aria-label="Go to slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    class="pagination-dot"
+                    aria-label="Go to slide 2"
+                  ></button>
+                </div>
+              </div>
+              <div class="product-card-information-wrapper">
+                <p class="product-card-category">Headphones</p>
+                <h3 class="product-card-header">
+                  KZ Castor Wired IEM In-Ear Headphon...
+                </h3>
+                <div
+                  class="product-card-reviews-wrapper"
+                  role="img"
+                  aria-label="Rating: 4.5 out of 5 based on 1876 reviews"
+                >
+                  <span class="rating-star"></span>
+                  <span class="rating-value">4.5</span>
+                  <span class="rating-count">(1.876)</span>
+                </div>
+                <div class="product-card-price-wrapper">
+                  <span class="price price-current">$249.00</span>
+                  <del class="price price-old">$329.00</del>
+                </div>
+              </div>
+            </article>
+            <article class="catalog-product-card">
+              <div class="product-card-visual-wrapper">
+                <img
+                  class="product-card-image"
+                  src="./images/products/product4.webp"
+                  alt=""
+                />
+                <div class="product-card-pagination-wrapper">
+                  <button
+                    type="button"
+                    class="pagination-dot active"
+                    aria-label="Go to slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    class="pagination-dot"
+                    aria-label="Go to slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    class="pagination-dot"
+                    aria-label="Go to slide 3"
+                  ></button>
+                </div>
+              </div>
+              <div class="product-card-information-wrapper">
+                <p class="product-card-category">Headphones</p>
+                <h3 class="product-card-header">
+                  Sony WF-C710N Truly Wireless Noise-...
+                </h3>
+                <div
+                  class="product-card-reviews-wrapper"
+                  role="img"
+                  aria-label="Rating: 4.9 out of 5 based on 3901 reviews"
+                >
+                  <span class="rating-star"></span>
+                  <span class="rating-value">4.9</span>
+                  <span class="rating-count">(3.901)</span>
+                </div>
+                <div class="product-card-price-wrapper">
+                  <span class="price price-current">$179.00</span>
+                  <del class="price price-old">$379.00</del>
+                </div>
+              </div>
+            </article>
+            <article class="catalog-product-card">
+              <div class="product-card-visual-wrapper">
+                <img
+                  class="product-card-image"
+                  src="./images/products/product5.webp"
+                  alt=""
+                />
+                <div class="product-card-pagination-wrapper">
+                  <button
+                    type="button"
+                    class="pagination-dot active"
+                    aria-label="Go to slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    class="pagination-dot"
+                    aria-label="Go to slide 2"
+                  ></button>
+                </div>
+              </div>
+              <div class="product-card-information-wrapper">
+                <p class="product-card-category">Headphones</p>
+                <h3 class="product-card-header">
+                  SteelSeries Arctis Nova 3P Wireless M...
+                </h3>
+                <div
+                  class="product-card-reviews-wrapper"
+                  role="img"
+                  aria-label="Rating: 3.2 out of 5 based on 4203 reviews"
+                >
+                  <span class="rating-star"></span>
+                  <span class="rating-value">3.2</span>
+                  <span class="rating-count">(4.203)</span>
+                </div>
+                <div class="product-card-price-wrapper">
+                  <span class="price price-current">$279.00</span>
+                  <del class="price price-old">$339.00</del>
+                </div>
+              </div>
+            </article>
+            <article class="catalog-product-card">
+              <div class="product-card-visual-wrapper">
+                <img
+                  class="product-card-image"
+                  src="./images/products/product6.webp"
+                  alt=""
+                />
+                <div class="product-card-badges-wrapper">
+                  <span class="badge badge-save">Save 14%</span>
+                </div>
+                <div class="product-card-pagination-wrapper">
+                  <button
+                    type="button"
+                    class="pagination-dot active"
+                    aria-label="Go to slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    class="pagination-dot"
+                    aria-label="Go to slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    class="pagination-dot"
+                    aria-label="Go to slide 3"
+                  ></button>
+                </div>
+              </div>
+              <div class="product-card-information-wrapper">
+                <p class="product-card-category">Headphones</p>
+                <h3 class="product-card-header">
+                  Logitech G PRO X SE Wired Gaming He...
+                </h3>
+                <div
+                  class="product-card-reviews-wrapper"
+                  role="img"
+                  aria-label="Rating: 3.2 out of 5 based on 4203 reviews"
+                >
+                  <span class="rating-star"></span>
+                  <span class="rating-value">3.2</span>
+                  <span class="rating-count">(4.203)</span>
+                </div>
+                <div class="product-card-price-wrapper">
+                  <span class="price price-current">$189.00</span>
+                  <del class="price price-old">$319.00</del>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
